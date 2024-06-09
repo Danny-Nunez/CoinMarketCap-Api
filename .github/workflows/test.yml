@@ -23,8 +23,8 @@ jobs:
           
       - name: execute py script # run scraper.py
         env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python scraper.py
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
+        run: python coinScrape.py
           
       - name: commit files
         run: |
